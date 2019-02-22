@@ -2,6 +2,7 @@
 	"name": "aud",
 	"version": "0.0.0",
 	"description": "Use `npx aud` instead of `npm audit`, whether you have a lockfile or not!",
+	"bin": "./bin.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
@@ -21,5 +22,10 @@
 	"bugs": {
 		"url": "https://github.com/ljharb/aud/issues"
 	},
-	"homepage": "https://github.com/ljharb/aud#readme"
+	"homepage": "https://github.com/ljharb/aud#readme",
+	"dependencies": {
+		"find-package-json": "^1.2.0",
+		"libnpx": "^10.2.0",
+		"npm-lockfile": "^2.0.1"
+	}
 }
