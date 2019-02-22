@@ -1,0 +1,25 @@
+{
+	"name": "aud",
+	"version": "0.0.0",
+	"description": "Use `npx aud` instead of `npm audit`, whether you have a lockfile or not!",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ljharb/aud.git"
+	},
+	"keywords": [
+		"audit",
+		"lockfile",
+		"shrinkwrap",
+		"npm",
+		"audit"
+	],
+	"author": "Jordan Harband <ljharb@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ljharb/aud/issues"
+	},
+	"homepage": "https://github.com/ljharb/aud#readme"
+}
