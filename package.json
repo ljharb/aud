@@ -4,6 +4,8 @@
 	"description": "Use `npx aud` instead of `npm audit`, whether you have a lockfile or not!",
 	"bin": "./bin.js",
 	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
@@ -27,5 +29,9 @@
 		"find-package-json": "^1.2.0",
 		"libnpx": "^10.2.0",
 		"npm-lockfile": "^2.0.1"
+	},
+	"devDependencies": {
+		"@ljharb/eslint-config": "^13.1.1",
+		"eslint": "^5.14.1"
 	}
 }
