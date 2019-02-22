@@ -11,7 +11,7 @@ const promisify = require('util.promisify');
 const path = require('path');
 const { existsSync } = require('fs');
 const writeFile = promisify(require('fs').writeFile);
-const copyFile = promisify(require('fs').copyFile);
+const copyFile = promisify(require('fs-copy-file'));
 const { execSync } = require('child_process');
 
 const { filename: pkg } = finder(process.cwd()).next();

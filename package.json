@@ -28,6 +28,7 @@
 	"homepage": "https://github.com/ljharb/aud#readme",
 	"dependencies": {
 		"find-package-json": "^1.2.0",
+		"fs-copy-file": "^2.1.2",
 		"libnpx": "^10.2.0",
 		"npm-lockfile": "^2.0.1"
 	},
