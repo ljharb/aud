@@ -7,6 +7,8 @@ const getLockfile = require('npm-lockfile/getLockfile');
 const getProjectTempDir = require('npm-lockfile/getProjectTempDir');
 const finder = require('find-package-json');
 const promisify = require('util.promisify');
+const semver = require('semver');
+const chalk = require('chalk');
 
 const path = require('path');
 const { existsSync } = require('fs');
@@ -37,9 +39,15 @@ const hasPkgLock = existsSync(path.join(pkgDir, 'package-lock.json'));
 const hasShrink = !hasPkgLock && existsSync(path.join(pkgDir, 'npm-shrinkwrap.json'));
 const isFix = parsed.cmdOpts.indexOf('fix') > -1;
 
-if (hasPkgLock || hasShrink || isFix) {
+const npmV = execSync('npm --version', encoding).trim();
+const npmIsGood = semver.satisfies(npmV, npmNeeded);
+
+if (npmIsGood && (hasPkgLock || hasShrink || isFix)) {
 	npx(parsed);
 } else {
+	if (!npmIsGood) {
+		console.log(chalk.blue(`npm is v${npmV}; we need ${npmNeeded}; installing npm in a temp dir...`));
+	}
 	Promise.all([
 		getLockfile(pkg, undefined, { npmNeeded }),
 		getProjectTempDir({ npmNeeded }),
@@ -52,6 +60,10 @@ if (hasPkgLock || hasShrink || isFix) {
 		return Promise.all([writtenLockfile, writtenPkg, writtenRC]).then(() => tmpDir);
 	}).then((tmpDir) => {
 		process.chdir(tmpDir);
+		process.env.PATH = `${path.join(tmpDir, '../node_modules/.bin')}:${process.env.PATH}`;
 		npx(parsed);
+	}).catch((error) => {
+		console.error(error);
+		process.exit(error.code || 1);
 	});
 }
