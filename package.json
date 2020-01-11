@@ -1,46 +1,49 @@
 {
-	"name": "aud",
-	"version": "1.0.0",
-	"description": "Use `npx aud` instead of `npm audit`, whether you have a lockfile or not!",
-	"bin": "./bin.js",
-	"scripts": {
-		"lint": "eslint .",
-		"pretest": "npm run lint",
-		"tests-only": "tape test",
-		"test": "npm run tests-only"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/ljharb/aud.git"
-	},
-	"keywords": [
-		"audit",
-		"lockfile",
-		"shrinkwrap",
-		"npm",
-		"audit"
-	],
-	"author": "Jordan Harband <ljharb@gmail.com>",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/ljharb/aud/issues"
-	},
-	"homepage": "https://github.com/ljharb/aud#readme",
-	"dependencies": {
-		"chalk": "^2.4.2",
-		"find-package-json": "^1.2.0",
-		"fs-copy-file": "^2.1.2",
-		"libnpx": "^10.2.0",
-		"npm-lockfile": "^2.0.1",
-		"semver": "^5.6.0"
-	},
-	"devDependencies": {
-		"@ljharb/eslint-config": "^13.1.1",
-		"eslint": "^5.14.1",
-		"tape": "^4.10.1"
-	},
-	"engines": {
-		"node": "^6 || ^8 || ^10 || ^11",
-		"npm": ">= 3"
-	}
+  "name": "aud",
+  "version": "1.0.0",
+  "description": "Use `npx aud` instead of `npm audit`, whether you have a lockfile or not!",
+  "bin": "./bin.js",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "tests-only": "tape test",
+    "test": "npm run tests-only"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ljharb/aud.git"
+  },
+  "keywords": [
+    "audit",
+    "lockfile",
+    "shrinkwrap",
+    "npm",
+    "audit"
+  ],
+  "author": "Jordan Harband <ljharb@gmail.com>",
+  "funding": {
+    "url": "https://github.com/sponsors/ljharb"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ljharb/aud/issues"
+  },
+  "homepage": "https://github.com/ljharb/aud#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "find-package-json": "^1.2.0",
+    "fs-copy-file": "^2.1.2",
+    "libnpx": "^10.2.0",
+    "npm-lockfile": "^2.0.1",
+    "semver": "^5.6.0"
+  },
+  "devDependencies": {
+    "@ljharb/eslint-config": "^13.1.1",
+    "eslint": "^5.14.1",
+    "tape": "^4.10.1"
+  },
+  "engines": {
+    "node": "^6 || ^8 || ^10 || ^11",
+    "npm": ">= 3"
+  }
 }
