@@ -39,7 +39,8 @@
 		"fs-copy-file": "^2.1.2",
 		"libnpx": "^10.2.3",
 		"npm-lockfile": "^2.0.2",
-		"semver": "^6.3.0"
+		"semver": "^6.3.0",
+		"util.promisify": "^1.0.1"
 	},
 	"devDependencies": {
 		"@ljharb/eslint-config": "^16.0.0",
