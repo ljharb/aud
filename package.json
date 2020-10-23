@@ -43,11 +43,11 @@
 		"util.promisify": "^1.0.1"
 	},
 	"devDependencies": {
-		"@ljharb/eslint-config": "^16.0.0",
-		"auto-changelog": "^2.0.0",
-		"eslint": "^6.8.0",
+		"@ljharb/eslint-config": "^17.2.0",
+		"auto-changelog": "^2.2.1",
+		"eslint": "^7.11.0",
 		"safe-publish-latest": "^1.1.4",
-		"tape": "^5.0.0-next.5"
+		"tape": "^5.0.1"
 	},
 	"engines": {
 		"node": "^6 || ^8 || ^10 || ^11 || ^12 || ^13 || ^14",
@@ -58,7 +58,8 @@
 		"template": "keepachangelog",
 		"unreleased": false,
 		"commitLimit": false,
-		"backfillLimit": false
+		"backfillLimit": false,
+		"hideCredit": true
 	},
 	"greenkeeper": {
 		"ignore": [
