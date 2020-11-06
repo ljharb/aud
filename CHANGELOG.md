@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.3](https://github.com/ljharb/aud/compare/v1.1.2...v1.1.3) - 2020-11-05
+
+### Commits
+
+- [Tests] migrate tests to Github Actions [`4867d5d`](https://github.com/ljharb/aud/commit/4867d5d0f7335b75bc2ca597e27a394c3f17a972)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `tape`, `auto-changelog` [`e7b3103`](https://github.com/ljharb/aud/commit/e7b31037436e53885d9c952bb6eea0f08421a98d)
+- [actions] add "Allow Edits" workflow [`56e9a2e`](https://github.com/ljharb/aud/commit/56e9a2ee2fdf58e2bfe09bb4194960e033daaad9)
+- [Deps] update `libnpx`, `npm-lockfile` [`bc18eb2`](https://github.com/ljharb/aud/commit/bc18eb23d284ed77754b9413f0c8f673ffbe797a)
+- [meta] update `rebase` workflow to checkout v2 [`50049a4`](https://github.com/ljharb/aud/commit/50049a442c6f228d2fd1eec133e7ca030cfeb0a1)
+- [Dev Deps] update `eslint` [`ce73086`](https://github.com/ljharb/aud/commit/ce73086183aa4582ebf5236cb33a07e676289217)
+- [actions] switch Automatic Rebase workflow to `pull_request_target` event [`657e3c2`](https://github.com/ljharb/aud/commit/657e3c29d4cbbca53d2d9abaaf4e4f9e4635fea8)
+- [meta] add node 15 to "engines" [`2d5bfad`](https://github.com/ljharb/aud/commit/2d5bfad68b65091c7a7adbc17f3f13d1c6706707)
+
 ## [v1.1.2](https://github.com/ljharb/aud/compare/v1.1.1...v1.1.2) - 2020-05-15
 
 ### Commits
