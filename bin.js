@@ -27,7 +27,7 @@ const NPM_PATH = path.join(root, 'npm', 'bin', 'npm-cli.js');
 
 const argv = process.argv.slice(0, 2).concat('npm', 'audit', process.argv.slice(2));
 const parsed = npx.parseArgs(argv, NPM_PATH);
-const npmNeeded = '^6';
+const npmNeeded = '>=6';
 const p = [`npm@${npmNeeded}`];
 Object.assign(parsed, {
 	p,
