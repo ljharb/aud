@@ -16,8 +16,8 @@ test('fix option', (t) => {
 		t.ok(error, 'errors');
 		t.ok(error.message.startsWith('Command failed: '), 'expected error message');
 		t.equal(error.code, 1, 'error code is 1');
-		t.equal(String(error).split('\n')[1], 'npm ERR! code EAUDITNOLOCK', 'error message has EAUDITNOLOCK');
+		t.match(String(error).split('\n')[1], /^npm ERR! code (EAUDITNOLOCK|ENOLOCK)$/, 'error message has EAUDITNOLOCK or ENOLOCK');
 		t.equal(stdout, '', 'no stdout output');
-		t.equal(stderr.split('\n')[0], 'npm ERR! code EAUDITNOLOCK', 'stderr starts with expected error code');
+		t.match(stderr.split('\n')[0], /^npm ERR! code (EAUDITNOLOCK|ENOLOCK)$/, 'stderr starts with expected error code');
 	});
 });
