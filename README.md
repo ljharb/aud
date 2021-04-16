@@ -18,15 +18,13 @@ Now, instead of `npm audit`, you can run `npx aud`! If your repo has a lockfile,
 `aud fix` without a lockfile present will throw `npm audit`'s normal "no lockfile" error, since there's no way to preserve fixes to transitive dependencies.
 
 [npm-url]: https://npmjs.org/package/aud
-[npm-version-svg]: http://versionbadg.es/ljharb/aud.svg
-[travis-svg]: https://travis-ci.org/ljharb/aud.svg
-[travis-url]: https://travis-ci.org/ljharb/aud
+[npm-version-svg]: https://versionbadg.es/ljharb/aud.svg
 [deps-svg]: https://david-dm.org/ljharb/aud.svg?theme=shields.io
 [deps-url]: https://david-dm.org/ljharb/aud
 [dev-deps-svg]: https://david-dm.org/ljharb/aud/dev-status.svg?theme=shields.io
 [dev-deps-url]: https://david-dm.org/ljharb/aud#info=devDependencies
 [npm-badge-png]: https://nodei.co/npm/aud.png?downloads=true&stars=true
-[license-image]: http://img.shields.io/npm/l/aud.svg
+[license-image]: https://img.shields.io/npm/l/aud.svg
 [license-url]: LICENSE
-[downloads-image]: http://img.shields.io/npm/dm/aud.svg
-[downloads-url]: http://npm-stat.com/charts.html?package=aud
+[downloads-image]: https://img.shields.io/npm/dm/aud.svg
+[downloads-url]: https://npm-stat.com/charts.html?package=aud
