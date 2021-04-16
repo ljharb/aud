@@ -44,11 +44,11 @@
 		"util.promisify": "^1.1.1"
 	},
 	"devDependencies": {
-		"@ljharb/eslint-config": "^17.5.0",
+		"@ljharb/eslint-config": "^17.5.1",
 		"auto-changelog": "^2.2.1",
-		"eslint": "^7.19.0",
+		"eslint": "^7.24.0",
 		"safe-publish-latest": "^1.1.4",
-		"tape": "^5.1.1"
+		"tape": "^5.2.2"
 	},
 	"engines": {
 		"node": "^6 || ^8 || ^10 || ^11 || ^12 || ^13 || ^14 || ^15",
