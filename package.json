@@ -4,7 +4,8 @@
 	"description": "Use `npx aud` instead of `npm audit`, whether you have a lockfile or not!",
 	"bin": "./bin.js",
 	"scripts": {
-		"prepublish": "safe-publish-latest",
+		"prepublish": "not-in-publish || npm run prepublishOnly",
+		"prepublishOnly": "safe-publish-latest",
 		"pretest": "npm run lint",
 		"lint": "eslint .",
 		"tests-only": "tape test",
