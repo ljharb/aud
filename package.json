@@ -46,7 +46,7 @@
 	"devDependencies": {
 		"@ljharb/eslint-config": "^17.5.1",
 		"auto-changelog": "^2.2.1",
-		"eslint": "^7.24.0",
+		"eslint": "^7.25.0",
 		"safe-publish-latest": "^1.1.4",
 		"tape": "^5.2.2"
 	},
