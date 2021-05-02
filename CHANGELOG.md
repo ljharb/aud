@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.5](https://github.com/ljharb/aud/compare/v1.1.4...v1.1.5) - 2021-05-01
+
+### Commits
+
+- [actions] use `node/install` instead of `node/run`; use `codecov` action [`b6cdffc`](https://github.com/ljharb/aud/commit/b6cdffc62ef496c3d05ca4984f97ddfcaa1b5755)
+- [readme] fix URLs [`84074e7`](https://github.com/ljharb/aud/commit/84074e7b1409e2576ea342ff6954fde785e54449)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `tape` [`37c3a3b`](https://github.com/ljharb/aud/commit/37c3a3b13580bd579a27770adbd14a35363ec9e6)
+- [Tests] fix error code checks due to npm 7 [`a7c7705`](https://github.com/ljharb/aud/commit/a7c770553914ff14fa44adc828f5248cd8b3f08f)
+- [meta] use `prepublishOnly` script for npm 7+ [`37d2fc7`](https://github.com/ljharb/aud/commit/37d2fc7ed2b825556d72be887962e4d01af7eadf)
+- [Dev Deps] update `eslint` [`f278729`](https://github.com/ljharb/aud/commit/f278729830a090f01402a5922df988be58480bcc)
+- [meta] add node 16 to `engines.node` [`2703898`](https://github.com/ljharb/aud/commit/270389850ff78b2661348a6a1dc79a75b13e1f08)
+
 ## [v1.1.4](https://github.com/ljharb/aud/compare/v1.1.3...v1.1.4) - 2021-02-09
 
 ### Commits
