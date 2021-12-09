@@ -3,6 +3,8 @@
 
 	"extends": "@ljharb/eslint-config/node/6",
 
+	"ignorePatterns": ["coverage"],
+
 	"rules": {
 		"array-bracket-newline": 0,
 	},

@@ -8,7 +8,7 @@
 		"prepublishOnly": "safe-publish-latest",
 		"pretest": "npm run lint",
 		"lint": "eslint --ext=js,mjs .",
-		"tests-only": "tape test",
+		"tests-only": "nyc tape 'test/**/*.js'",
 		"test": "npm run tests-only",
 		"posttest": "npx aud --production",
 		"version": "auto-changelog && git add CHANGELOG.md",
@@ -47,6 +47,7 @@
 		"@ljharb/eslint-config": "^20.0.0",
 		"auto-changelog": "^2.3.0",
 		"eslint": "^8.4.1",
+		"nyc": "^14.1.1",
 		"safe-publish-latest": "^2.0.0",
 		"tape": "^5.3.2"
 	},
