@@ -39,7 +39,7 @@
 		"find-package-json": "^1.2.0",
 		"fs-copy-file": "^2.1.2",
 		"libnpx": "^10.2.4",
-		"npm-lockfile": "^2.0.3",
+		"npm-lockfile": "^2.0.4",
 		"semver": "^6.3.0",
 		"util.promisify": "^1.1.1"
 	},
