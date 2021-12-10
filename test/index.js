@@ -16,7 +16,11 @@ test('fix option', (t) => {
 		t.ok(error, 'errors');
 		t.ok(error.message.startsWith('Command failed: '), 'expected error message');
 		t.equal(error.code, 1, 'error code is 1');
-		t.match(String(error).split('\n')[1], /^npm ERR! code (EAUDITNOLOCK|ENOLOCK)$/, 'error message has EAUDITNOLOCK or ENOLOCK');
+		t.match(
+			String(error).split('\n').filter((x) => !(/^npm WARN npm npm does not support Node.js /).test(x))[1],
+			/^npm ERR! code (EAUDITNOLOCK|ENOLOCK)$/,
+			'error message has EAUDITNOLOCK or ENOLOCK'
+		);
 		t.equal(stdout, '', 'no stdout output');
 		t.match(stderr.split('\n')[0], /^npm ERR! code (EAUDITNOLOCK|ENOLOCK)$/, 'stderr starts with expected error code');
 	});
