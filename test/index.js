@@ -7,6 +7,10 @@ const test = require('tape');
 
 const cwd = process.cwd();
 
+function hideWarnings(lines) {
+	return lines.filter((x) => !(/^npm WARN|^\(node:\d+\) ExperimentalWarning/).test(x));
+}
+
 test('fix option', (t) => {
 	t.plan(6);
 	process.chdir(path.join(__dirname, '..'));
@@ -17,11 +21,15 @@ test('fix option', (t) => {
 		t.ok(error.message.startsWith('Command failed: '), 'expected error message');
 		t.equal(error.code, 1, 'error code is 1');
 		t.match(
-			String(error).split('\n').filter((x) => !(/^npm WARN npm npm does not support Node.js /).test(x))[1],
+			hideWarnings(String(error).split('\n'))[1],
 			/^npm ERR! code (EAUDITNOLOCK|ENOLOCK)$/,
 			'error message has EAUDITNOLOCK or ENOLOCK'
 		);
 		t.equal(stdout, '', 'no stdout output');
-		t.match(stderr.split('\n')[0], /^npm ERR! code (EAUDITNOLOCK|ENOLOCK)$/, 'stderr starts with expected error code');
+		t.match(
+			hideWarnings(stderr.split('\n'))[0],
+			/^npm ERR! code (EAUDITNOLOCK|ENOLOCK)$/,
+			'stderr starts with expected error code'
+		);
 	});
 });
