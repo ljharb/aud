@@ -5,14 +5,12 @@
 const npx = require('libnpx');
 const getLockfile = require('npm-lockfile/getLockfile');
 const finder = require('find-package-json');
-const promisify = require('util.promisify');
 const semver = require('semver');
 const colors = require('colors/safe');
 
 const path = require('path');
 const { existsSync } = require('fs');
-const writeFile = promisify(require('fs').writeFile);
-const copyFile = promisify(require('fs-copy-file'));
+const { copyFile, writeFile } = require('fs').promises;
 const { execSync } = require('child_process');
 
 const getProjectTempDir = require('./getProjectTempDir');

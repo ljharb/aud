@@ -3,13 +3,12 @@
 const tmp = require('tmp');
 const nodeCleanup = require('node-cleanup');
 const semver = require('semver');
-const promisify = require('util.promisify');
 const rimraf = require('rimraf');
 const colors = require('colors/safe');
 
 const path = require('path');
 const { exec, execSync } = require('child_process');
-const writeFile = promisify(require('fs').writeFile);
+const { writeFile } = require('fs').promises;
 
 const cleanupHandlers = [];
 const finalCleanup = function finalCleanup() {
