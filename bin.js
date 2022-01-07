@@ -50,7 +50,7 @@ if (npmIsGood && (hasPkgLock || hasShrink || isFix)) {
 		console.log(colors.blue(`npm is v${npmV}; we need ${npmNeeded}; installing npm in a temp dir...`));
 	}
 	Promise.all([
-		getLockfile(pkg, undefined, { npmNeeded }),
+		getLockfile(pkg),
 		getProjectTempDir({ npmNeeded }),
 	]).then(([lockfile, tmpDir]) => {
 		const lockfilePath = path.join(tmpDir, 'package-lock.json');

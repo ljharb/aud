@@ -40,7 +40,7 @@
 		"fs-copy-file": "^2.1.2",
 		"libnpx": "^10.2.4",
 		"node-cleanup": "^2.1.2",
-		"npm-lockfile": "^2.0.4",
+		"npm-lockfile": "^3.0.0",
 		"semver": "^6.3.0",
 		"tmp": "^0.1.0",
 		"util.promisify": "^1.1.1"
@@ -49,12 +49,12 @@
 		"@ljharb/eslint-config": "^20.1.0",
 		"auto-changelog": "^2.3.0",
 		"eslint": "^8.6.0",
-		"nyc": "^14.1.1",
+		"nyc": "^15.1.0",
 		"safe-publish-latest": "^2.0.0",
 		"tape": "^5.4.0"
 	},
 	"engines": {
-		"node": ">= 10 || ^8 || ^6",
+		"node": ">=16 || ^14.15 || ^12.13",
 		"npm": ">= 3"
 	},
 	"auto-changelog": {

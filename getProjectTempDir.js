@@ -45,7 +45,7 @@ const getRootTempDir = function getRootTempDir(npmNeeded, logger = () => {}) {
 				};
 				return writeFile(
 					path.join(tmpDir, 'package.json'),
-					JSON.stringify(pkgContents)
+					JSON.stringify(pkgContents),
 				).then(() => new Promise((resolve, reject) => {
 					cleanupHandlers.unshift(() => {
 						rimraf.sync(path.join(tmpDir, '*'));
