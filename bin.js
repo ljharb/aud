@@ -4,7 +4,6 @@
 
 const npx = require('libnpx');
 const getLockfile = require('npm-lockfile/getLockfile');
-const getProjectTempDir = require('npm-lockfile/getProjectTempDir');
 const finder = require('find-package-json');
 const promisify = require('util.promisify');
 const semver = require('semver');
@@ -15,6 +14,8 @@ const { existsSync } = require('fs');
 const writeFile = promisify(require('fs').writeFile);
 const copyFile = promisify(require('fs-copy-file'));
 const { execSync } = require('child_process');
+
+const getProjectTempDir = require('./getProjectTempDir');
 
 const { filename: pkg } = finder(process.cwd()).next();
 const pkgDir = path.dirname(pkg);

@@ -5,6 +5,17 @@
 
 	"rules": {
 		"array-bracket-newline": 0,
+		"func-name-matching": 0,
 		"func-style": 0,
 	},
+
+	"overrides": [
+		{
+			"files": "./getProjectTempDir.js",
+			"rules": {
+				"max-nested-callbacks": 0,
+				"sort-keys": 0,
+			},
+		},
+	],
 }
