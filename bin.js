@@ -8,7 +8,7 @@ const getProjectTempDir = require('npm-lockfile/getProjectTempDir');
 const finder = require('find-package-json');
 const promisify = require('util.promisify');
 const semver = require('semver');
-const chalk = require('chalk');
+const colors = require('colors/safe');
 
 const path = require('path');
 const { existsSync } = require('fs');
@@ -46,7 +46,7 @@ if (npmIsGood && (hasPkgLock || hasShrink || isFix)) {
 	npx(parsed);
 } else {
 	if (!npmIsGood) {
-		console.log(chalk.blue(`npm is v${npmV}; we need ${npmNeeded}; installing npm in a temp dir...`));
+		console.log(colors.blue(`npm is v${npmV}; we need ${npmNeeded}; installing npm in a temp dir...`));
 	}
 	Promise.all([
 		getLockfile(pkg, undefined, { npmNeeded }),

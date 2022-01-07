@@ -35,7 +35,7 @@
 	},
 	"homepage": "https://github.com/ljharb/aud#readme",
 	"dependencies": {
-		"chalk": "^2.4.2",
+		"colors": "^1.4.0",
 		"find-package-json": "^1.2.0",
 		"fs-copy-file": "^2.1.2",
 		"libnpx": "^10.2.4",
@@ -62,11 +62,5 @@
 		"commitLimit": false,
 		"backfillLimit": false,
 		"hideCredit": true
-	},
-	"greenkeeper": {
-		"ignore": [
-			"chalk",
-			"semver"
-		]
 	}
 }
