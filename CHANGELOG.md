@@ -5,6 +5,29 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.0.0](https://github.com/ljharb/aud/compare/v1.1.5...v2.0.0) - 2022-01-11
+
+### Commits
+
+- [actions] reuse common workflows [`37e4cf1`](https://github.com/ljharb/aud/commit/37e4cf1c324bc00838a4ad5ae815ba2ec983ffd6)
+- [Refactor] copy `getProjectTempDir` from `npm-lockfile` v2, since v3 removes it [`60e4f8b`](https://github.com/ljharb/aud/commit/60e4f8b0fbb7a85f64666ad2f79887181c14a781)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `auto-changelog`, `safe-publish-latest`, `tape` [`6112fa0`](https://github.com/ljharb/aud/commit/6112fa0118cdc086881362311bd11ecddd907a00)
+- [Breaking] update to `npm-lockfile` v3 [`b52962b`](https://github.com/ljharb/aud/commit/b52962b44a5d679f25cd7d02fba7be844787067a)
+- [Tests] add `nyc` [`4d6cf90`](https://github.com/ljharb/aud/commit/4d6cf90f330c900f45f5210c345bd520619c3262)
+- [Tests] filter out npm warnings, redux [`5a63833`](https://github.com/ljharb/aud/commit/5a63833260db725e4dcd0537e174c7ed2dfac013)
+- [Refactor] use `colors` instead of `chalk` [`324a287`](https://github.com/ljharb/aud/commit/324a2872c6886abcf2da38442d8a6cae9ac0c78c)
+- [Refactor] use `fs.promises` instead of `util.promisify`; use built-in `copyFile` [`1e8d387`](https://github.com/ljharb/aud/commit/1e8d387875fbbd021b1fc09740d51505928f7fab)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `tape` [`d78214e`](https://github.com/ljharb/aud/commit/d78214e3bb74c674b55cef8a24de52fe0dc9f110)
+- [actions] update workflows [`b748956`](https://github.com/ljharb/aud/commit/b7489563d6e965b971d490c28f0620b52c7d6113)
+- [Tests] filter out npm warnings [`2627cfa`](https://github.com/ljharb/aud/commit/2627cfa33a7c6f80dc2e3fbc10d889e3a818ec8c)
+- [Deps] update `semver`, `tmp` [`f18f1ed`](https://github.com/ljharb/aud/commit/f18f1ed9965f0691201a92bc5eebf38bc92ede05)
+- [Breaking] add "exports" [`0c41fdd`](https://github.com/ljharb/aud/commit/0c41fddb9a7475b7582ecae6170713659484b6a9)
+- [Deps] update `npm-lockfile` [`cb70cd9`](https://github.com/ljharb/aud/commit/cb70cd99148b634ddb9ee497d7d5fab2d01c8ee5)
+- [Fix] pin `colors` [`ad0bde5`](https://github.com/ljharb/aud/commit/ad0bde55bcd6edee992f536fc504848000155f8f)
+- [Deps] update `npm-lockfile` [`ac56080`](https://github.com/ljharb/aud/commit/ac56080cd34b3d6252a48fd57704179b44e0ef3a)
+- [meta] broaden engines support to &gt;= 10 [`211e00e`](https://github.com/ljharb/aud/commit/211e00ea72a4d5bd5e1d319a19ad7cda510a9f2c)
+- [meta] add `audit-level` [`56ca7ad`](https://github.com/ljharb/aud/commit/56ca7ad763aeba547cfbe47465560210e12b84ef)
+
 ## [v1.1.5](https://github.com/ljharb/aud/compare/v1.1.4...v1.1.5) - 2021-05-01
 
 ### Commits
