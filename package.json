@@ -42,7 +42,7 @@
 		"find-package-json": "^1.2.0",
 		"libnpx": "^10.2.4",
 		"node-cleanup": "^2.1.2",
-		"npm-lockfile": "^3.0.1",
+		"npm-lockfile": "^3.0.2",
 		"semver": "^7.3.5",
 		"tmp": "^0.2.1"
 	},
