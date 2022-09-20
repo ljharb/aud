@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.0.1](https://github.com/ljharb/aud/compare/v2.0.0...v2.0.1) - 2022-09-20
+
+### Commits
+
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `auto-changelog`, `tape` [`7915f18`](https://github.com/ljharb/aud/commit/7915f182ec47aef1b53227be5fa2195709d0eb94)
+- [Deps] update `npm-lockfile`, `semver` [`8c9f7e0`](https://github.com/ljharb/aud/commit/8c9f7e07d50ac3f8c8aa0e3b3f81088c277348ae)
+- [Dev Deps] update `@ljharb/eslint-config`, `tape` [`65adcb9`](https://github.com/ljharb/aud/commit/65adcb9c3276a2a3699bca2f4392040dc441fb20)
+- [Deps] update `npm-lockfile` [`bc32409`](https://github.com/ljharb/aud/commit/bc3240994ae1d4d2b2c23b80b983f12e47d68ccf)
+- [meta] directly invoke the bin in `posttest` [`b40a155`](https://github.com/ljharb/aud/commit/b40a155514dec4ae88582de8144fee051025cbbf)
+- [Deps] update `npm-lockfile` [`97f7ca4`](https://github.com/ljharb/aud/commit/97f7ca4993d348e3e0f068d9e2c69d9df7b8d7ce)
+- [Deps] pin `pacote` due to a breaking change in v13.6.1+ [`00f6bc8`](https://github.com/ljharb/aud/commit/00f6bc8d9d3c4fb8acb2719d2d749f56cce896fe)
+- [Deps] add missing `rimraf` dep [`0f582e4`](https://github.com/ljharb/aud/commit/0f582e41e4f74682caadc047189ed9700aef6e85)
+
 ## [v2.0.0](https://github.com/ljharb/aud/compare/v1.1.5...v2.0.0) - 2022-01-11
 
 ### Commits
