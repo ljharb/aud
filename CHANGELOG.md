@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.0.2](https://github.com/ljharb/aud/compare/v2.0.1...v2.0.2) - 2022-12-19
+
+### Commits
+
+- [meta] use `npmignore` to autogenerate an npmignore file [`dcf2617`](https://github.com/ljharb/aud/commit/dcf26179fe49403db2cfd0e84416c4a91f8dc288)
+- [Deps] unpin `pacote`, update `semver` [`daecac4`](https://github.com/ljharb/aud/commit/daecac47eb0da1e5c710af16708a166a980fd4f6)
+- [actions] update checkout action [`3c87a31`](https://github.com/ljharb/aud/commit/3c87a31e3333a83be06d0f2eb75e152a7e4d0c13)
+
 ## [v2.0.1](https://github.com/ljharb/aud/compare/v2.0.0...v2.0.1) - 2022-09-20
 
 ### Commits
