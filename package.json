@@ -1,6 +1,6 @@
 {
 	"name": "aud",
-	"version": "2.0.2",
+	"version": "2.0.3",
 	"description": "Use `npx aud` instead of `npm audit`, whether you have a lockfile or not!",
 	"bin": "./bin.js",
 	"exports": {
