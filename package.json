@@ -45,7 +45,7 @@
 		"node-cleanup": "^2.1.2",
 		"npm-lockfile": "^3.0.7",
 		"rimraf": "^3.0.2",
-		"semver": "^7.5.3",
+		"semver": "^7.5.4",
 		"tmp": "^0.2.1"
 	},
 	"devDependencies": {
