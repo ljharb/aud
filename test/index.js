@@ -22,13 +22,13 @@ test('fix option', (t) => {
 		t.equal(error.code, 1, 'error code is 1');
 		t.match(
 			hideWarnings(String(error).split('\n'))[1],
-			/^npm ERR! code (?:EAUDITNOLOCK|ENOLOCK)$/,
-			'error message has EAUDITNOLOCK or ENOLOCK',
+			/^npm ERR! code (?:EAUDITNOLOCK|ENOLOCK|EUSAGE)$/,
+			'error message has EAUDITNOLOCK or ENOLOCK or EUSAGE',
 		);
 		t.equal(stdout, '', 'no stdout output');
 		t.match(
 			hideWarnings(stderr.split('\n'))[0],
-			/^npm ERR! code (?:EAUDITNOLOCK|ENOLOCK)$/,
+			/^npm ERR! code (?:EAUDITNOLOCK|ENOLOCK|EUSAGE)$/,
 			'stderr starts with expected error code',
 		);
 	});
