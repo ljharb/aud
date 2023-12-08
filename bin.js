@@ -54,7 +54,7 @@ if (npmIsGood && (hasPkgLock || hasShrink || isFix)) {
 		const lockfilePath = path.join(tmpDir, 'package-lock.json');
 		const writtenLockfile = writeFile(lockfilePath, lockfile, encoding);
 		const writtenPkg = copyFile(pkg, path.join(tmpDir, 'package.json'));
-		const auditLevel = execSync('npm config get audit-level', encoding).trim();
+		const auditLevel = execSync(`npm config get audit-level --no-workspaces --prefix="${process.cwd()}"`, encoding).trim();
 		const writtenRC = auditLevel && auditLevel !== 'undefined' ? writeFile(path.join(tmpDir, '.npmrc'), `audit-level=${auditLevel}`, encoding) : null;
 		return Promise.all([writtenLockfile, writtenPkg, writtenRC]).then(() => tmpDir);
 	}).then((tmpDir) => {
