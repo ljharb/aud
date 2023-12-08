@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.0.4](https://github.com/ljharb/aud/compare/v2.0.3...v2.0.4) - 2023-12-08
+
+### Commits
+
+- [actions] use shared rebase action [`5acc88d`](https://github.com/ljharb/aud/commit/5acc88dbf1f3fd2a9fd809beef9cd5dd20d014d2)
+- [Tests] npm 9+ throws EUSAGE for a non-lockfile npm audit, now [`b38d220`](https://github.com/ljharb/aud/commit/b38d22060596b92b69dac3e666f82e809bab0541)
+- [Dev Deps] update `npmignore`, `tape` [`dcbce75`](https://github.com/ljharb/aud/commit/dcbce7589c16235cde5f5412273ae4d04cfbe9e2)
+- [Fix] ensure `aud` works properly in workspaces [`4625b24`](https://github.com/ljharb/aud/commit/4625b240cc08470c0d5dc4a8366a56ddc43b8984)
+- [Deps] update `semver` [`e9c988c`](https://github.com/ljharb/aud/commit/e9c988c1dcdb8d4d19c8b12d08b9302e7e2e48be)
+- [Deps] update `semver` [`3d60b22`](https://github.com/ljharb/aud/commit/3d60b2207d4e6ce3ceb9966661aa4a02cdecbd8e)
+
 ## [v2.0.3](https://github.com/ljharb/aud/compare/v2.0.2...v2.0.3) - 2023-06-20
 
 ### Commits
