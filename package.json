@@ -55,7 +55,7 @@
 		"npmignore": "^0.3.1",
 		"nyc": "^15.1.0",
 		"safe-publish-latest": "^2.0.0",
-		"tape": "^5.7.2"
+		"tape": "^5.7.5"
 	},
 	"engines": {
 		"node": ">=16 || ^14.15 || ^12.13",
