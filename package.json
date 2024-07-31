@@ -46,7 +46,7 @@
 		"npm-lockfile": "^3.0.7",
 		"rimraf": "^3.0.2",
 		"semver": "^7.6.3",
-		"tmp": "^0.2.3"
+		"tmp": "=0.2.1"
 	},
 	"devDependencies": {
 		"@ljharb/eslint-config": "^21.1.1",
