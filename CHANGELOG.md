@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.0.5](https://github.com/ljharb/aud/compare/v2.0.4...v2.0.5) - 2024-07-30
+
+### Commits
+
+- [Dev Deps] update `@ljharb/eslint-config`, `tape` [`f1fd495`](https://github.com/ljharb/aud/commit/f1fd495bf0dc913f7461a8878e9af10fd626cf18)
+- [Tests] npm v10.6.0 changed its error prefix from `ERR!` to `error` [`af8b7f9`](https://github.com/ljharb/aud/commit/af8b7f98b28cf0b2eeb1213b03de5ee44e027390)
+- [Deps] update `semver`, `tmp` [`85db575`](https://github.com/ljharb/aud/commit/85db5759802dd54efc817567c377498e087a1b04)
+- [Fix] pin `tmp` to v0.2.1 due to a breaking change [`27c5052`](https://github.com/ljharb/aud/commit/27c505274534af3e931f612d7251196801a609ef)
+- [Deps] update `semver` [`dfd6ea9`](https://github.com/ljharb/aud/commit/dfd6ea9a4eb9fcf52062810dd832b5c060dd9860)
+- [Dev Deps] update `tape` [`9549943`](https://github.com/ljharb/aud/commit/9549943176525581d13dd892e4f65e1581edac99)
+
 ## [v2.0.4](https://github.com/ljharb/aud/compare/v2.0.3...v2.0.4) - 2023-12-08
 
 ### Commits
