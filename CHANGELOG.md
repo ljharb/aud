@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v3.0.0](https://github.com/ljharb/aud/compare/v2.0.5...v3.0.0) - 2024-07-30
+
+### Commits
+
+- [Refactor] move entrypoint to ESM [`84af24d`](https://github.com/ljharb/aud/commit/84af24d10c9bc6528ebe15072c91eaa1b6fbd9a0)
+- [Breaking] update `npm-lockfile`; drop node &lt; 16.14 [`72c2567`](https://github.com/ljharb/aud/commit/72c2567cee20879a7cf257a611c18e896536870c)
+- [Refactor] replace `rimraf` with `fs.rmSync` recursive [`7ba7bec`](https://github.com/ljharb/aud/commit/7ba7bec8ac63e15aa81a97215b5abbf80fd063d0)
+- [Deps] update `tmp` [`517cfa1`](https://github.com/ljharb/aud/commit/517cfa1da938fd08dbf973c875c77c4cf1934c6f)
+- [Deps] update `rimraf` [`8030e3f`](https://github.com/ljharb/aud/commit/8030e3f2ab9d80f44a8b5e8f3196cd7efb6da15c)
+
 ## [v2.0.5](https://github.com/ljharb/aud/compare/v2.0.4...v2.0.5) - 2024-07-30
 
 ### Commits
