@@ -6,13 +6,6 @@ jobs:
   tests:
     uses: ljharb/actions/.github/workflows/node.yml@main
     with:
-      range: '>=16 || ^14.15 || ^12.13'
+      range: '>= 22 || ^20.9 || ^18.12 || ^16.14'
       type: minors
       command: npm run tests-only
-
-  node:
-    name: 'node'
-    needs: [tests]
-    runs-on: ubuntu-latest
-    steps:
-      - run: 'echo tests completed'
