@@ -11,10 +11,12 @@ function hideWarnings(lines) {
 	return lines.filter((x) => !(/^npm WARN|^\(node:\d+\) ExperimentalWarning/).test(x));
 }
 
+const binPath = require('../package.json').bin;
+
 test('fix option', (t) => {
 	t.plan(6);
 	process.chdir(path.join(__dirname, '..'));
-	exec('./bin.js fix', { encoding: 'utf-8' }, (error, stdout, stderr) => {
+	exec(`${binPath} fix`, { encoding: 'utf-8' }, (error, stdout, stderr) => {
 		process.chdir(cwd);
 
 		t.ok(error, 'errors');

@@ -2,7 +2,7 @@
 	"name": "aud",
 	"version": "2.0.5",
 	"description": "Use `npx aud` instead of `npm audit`, whether you have a lockfile or not!",
-	"bin": "./bin.js",
+	"bin": "./bin.mjs",
 	"exports": {
 		"./package.json": "./package.json"
 	},
@@ -14,7 +14,7 @@
 		"lint": "eslint --ext=js,mjs .",
 		"tests-only": "nyc tape 'test/**/*.js'",
 		"test": "npm run tests-only",
-		"posttest": "./bin.js --production",
+		"posttest": "./bin.mjs --production",
 		"version": "auto-changelog && git add CHANGELOG.md",
 		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
 	},

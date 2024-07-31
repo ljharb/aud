@@ -1,19 +1,17 @@
 #!/usr/bin/env node
 
-'use strict';
+import npx from 'libnpx';
+import getLockfile from 'npm-lockfile/getLockfile';
+import finder from 'find-package-json';
+import semver from 'semver';
+import colors from 'colors/safe.js';
 
-const npx = require('libnpx');
-const getLockfile = require('npm-lockfile/getLockfile');
-const finder = require('find-package-json');
-const semver = require('semver');
-const colors = require('colors/safe');
+import path from 'path';
+import { existsSync } from 'fs';
+import { copyFile, writeFile } from 'fs/promises';
+import { execSync } from 'child_process';
 
-const path = require('path');
-const { existsSync } = require('fs');
-const { copyFile, writeFile } = require('fs').promises;
-const { execSync } = require('child_process');
-
-const getProjectTempDir = require('./getProjectTempDir');
+import getProjectTempDir from './getProjectTempDir.js';
 
 const { filename: pkg } = finder(process.cwd()).next();
 const pkgDir = path.dirname(pkg);
@@ -50,13 +48,14 @@ if (npmIsGood && (hasPkgLock || hasShrink || isFix)) {
 	Promise.all([
 		getLockfile(pkg),
 		getProjectTempDir({ npmNeeded }),
-	]).then(([lockfile, tmpDir]) => {
+	]).then(async ([lockfile, tmpDir]) => {
 		const lockfilePath = path.join(tmpDir, 'package-lock.json');
 		const writtenLockfile = writeFile(lockfilePath, lockfile, encoding);
 		const writtenPkg = copyFile(pkg, path.join(tmpDir, 'package.json'));
 		const auditLevel = execSync(`npm config get audit-level --no-workspaces --prefix="${process.cwd()}"`, encoding).trim();
 		const writtenRC = auditLevel && auditLevel !== 'undefined' ? writeFile(path.join(tmpDir, '.npmrc'), `audit-level=${auditLevel}`, encoding) : null;
-		return Promise.all([writtenLockfile, writtenPkg, writtenRC]).then(() => tmpDir);
+		await Promise.all([writtenLockfile, writtenPkg, writtenRC]);
+		return tmpDir;
 	}).then((tmpDir) => {
 		process.chdir(tmpDir);
 		process.env.PATH = `${path.join(tmpDir, '../node_modules/.bin')}:${process.env.PATH}`;
