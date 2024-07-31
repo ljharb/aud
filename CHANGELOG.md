@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v3.0.1](https://github.com/ljharb/aud/compare/v3.0.0...v3.0.1) - 2024-07-31
+
+### Commits
+
+- EOL [`6236062`](https://github.com/ljharb/aud/commit/6236062a0f9e5a41d0714ee39d6037736417c822)
+
 ## [v3.0.0](https://github.com/ljharb/aud/compare/v2.0.5...v3.0.0) - 2024-07-30
 
 ### Commits

@@ -1,7 +1,13 @@
+# ***END OF LIFE***
+
+Thanks to the wonderful folks at npm, in npm v10.2+, after [6 years](https://twitter.com/adam_baldwin/status/994314354530045952), `npm audit` [no longer requires a lockfile](https://github.com/npm/cli/pull/6732)!
+
+Therefore, you should no longer use `aud`. Instead, use `npx npm@'>=10.2' audit --production`.
+
+--------
+
 # aud <sup>[![Version Badge][npm-version-svg]][npm-url]</sup>
 
-[![dependency status][deps-svg]][deps-url]
-[![dev dependency status][dev-deps-svg]][dev-deps-url]
 [![License][license-image]][license-url]
 [![Downloads][downloads-image]][downloads-url]
 
