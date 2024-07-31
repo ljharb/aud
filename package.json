@@ -44,7 +44,7 @@
 		"libnpx": "^10.2.4",
 		"node-cleanup": "^2.1.2",
 		"npm-lockfile": "^4.0.0",
-		"rimraf": "^3.0.2",
+		"rimraf": "=5.0.7",
 		"semver": "^7.6.3",
 		"tmp": "=0.2.1"
 	},
